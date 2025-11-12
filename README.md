@@ -1,4 +1,4 @@
-# GDAP Request Creator (Electron-Vite Version)
+# GDAP Manager (Electron-Vite Version)
 
 This is a desktop application built with Electron, React, and Vite to create Microsoft 365 Partner Center GDAP requests and to manage role assigments to the relationships.
 This app runs with delegated user permissions and needs that the user has Admin Agent-role set in Partner portal. This is not Entra admin role, it can only be found in Partner portal roles.
