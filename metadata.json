@@ -1,0 +1,5 @@
+{
+  "name": "Microsoft 365 GDAP Request Creator vite",
+  "description": "An application to create and manage Granular Delegated Admin Privileges (GDAP) requests for Microsoft 365 Partner Center. Select default or custom permissions, set a custom name, and configure auto-extension. Using Electron-Vite",
+  "requestFramePermissions": []
+}

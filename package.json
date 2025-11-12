@@ -1,0 +1,59 @@
+{
+  "name": "GDAP-Manager",
+  "version": "1.3.0",
+  "description": "A desktop application to create Microsoft 365 GDAP requests, powered by Vite + Electron.",
+  "main": "out/main/index.js",
+  "scripts": {
+    "dev": "electron-vite dev",
+    "build": "electron-vite build",
+    "package:win": "npm run build && electron-builder --win",
+	"package:mac": "npm run build && electron-builder --mac",
+	"package:linux": "npm run build && electron-builder --linux",
+    "postinstall": "electron-builder install-app-deps",
+    "clean": "rimraf out release"
+  },
+  "author": "Jarno Kurki",
+  "license": "MIT",
+  "dependencies": {
+    "@azure/msal-node": "^3.8.1",
+    "@azure/msal-node-extensions": "^1.5.24",
+    "@electron-toolkit/utils": "^4.0.0",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.1",
+    "autoprefixer": "^10.4.19",
+    "electron": "^39.0.0",
+    "electron-builder": "^26.0.12",
+    "electron-vite": "^4.0.1",
+    "postcss": "^8.4.38",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "rimraf": "^6.1.0",
+    "tailwindcss": "^3.4.4",
+    "typescript": "^5.4.5",
+    "vite": "^7.1.12"
+  },
+  "build": {
+    "appId": "com.gdapmanager",
+    "productName": "GDAP Manager",
+    "directories": {
+      "output": "release"
+    },
+    "files": [
+      "out/**/*",
+      "package.json"
+    ],
+    "win": {
+      "target": "nsis",
+      "icon": "build/icon.ico"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true
+    }
+  }
+}
