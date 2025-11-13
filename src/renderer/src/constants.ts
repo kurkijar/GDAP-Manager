@@ -82,6 +82,7 @@ export const DEFAULT_ROLE_IDS: string[] = [
   '644ef478-e28f-4e28-b9dc-3fdde9aa0b1f', // Printer Administrator
   'f28a1f50-f6e7-4571-818b-6a12f2af6b6c', // SharePoint Administrator
   '69091246-20e8-4a56-aa4d-066075b2a7a8', // Teams Administrator
+  'a9ea8996-122f-4c74-9520-8edcd192826c', // Fabric Administrator
   '8ac3fc64-6eca-42ea-9e69-59f4c7b60eb2', // Hybrid Identity Administrator
   'eb1f4a8d-243a-41f0-9fbd-c7cdf6c5ef7c', // Insights Administrator
   '59d46f88-662b-457b-bceb-5c3809e5908f', // Lifecycle Workflows Administrator
